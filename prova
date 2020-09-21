@@ -2,8 +2,6 @@ from requests_html import HTMLSession
 from bs4 import BeautifulSoup
 session = HTMLSession()
 r = session.get('http://www.topscore90.net/Holder.bet?page=sport')
-
-
 soup=BeautifulSoup(r.content, 'html.parser')
 soup.prettify()
 print(soup)
